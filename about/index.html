@@ -28,7 +28,7 @@
     </style>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -430,7 +430,25 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="hexo新页面“关于”"><a href="#hexo新页面“关于”" class="headerlink" title="hexo新页面“关于”"></a>hexo新页面“关于”</h2><p> 标题：关于<br>日期：2019-10-21 10:45:30<br>类型：“关于”<br>布局：“关于”<br>-</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -649,6 +667,8 @@
                         
                             hexo新页面“关于” 标题：关于日期：2019-10-21 10:45:30类型：“关于”布局：“关于”-
 
+        document.querySelectorAll('.github-emoji')
+          .fo
                         
                     </div>
                     <div class="publish-info">
@@ -688,6 +708,8 @@
                         
                             hexo新页面“关于” 标题：关于日期：2019-10-21 10:45:30类型：“关于”布局：“关于”-
 
+        document.querySelectorAll('.github-emoji')
+          .fo
                         
                     </div>
                     <div class="publish-info">
